@@ -3,13 +3,13 @@ import os
 from flask import Flask, make_response, request, send_file
 from flask_cors import CORS
 
-from mysite.delete import deleteFiles
-from mysite.evaluatePage1 import evaluate1
-from mysite.evaluatePage2 import evaluate2
-from mysite.file import fileSetup
-from mysite.pdf import imgToPDF
-from mysite.rollset import getRollSet
-from mysite.split import split_list
+from myModules.delete import deleteFiles
+from myModules.evaluatePage1 import evaluate1
+from myModules.evaluatePage2 import evaluate2
+from myModules.file import fileSetup
+from myModules.pdf import imgToPDF
+from myModules.rollset import getRollSet
+from myModules.split import split_list
 
 app = Flask(__name__)
 CORS(
